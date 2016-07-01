@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_fragment_linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+    
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="16dp"
+    	android:layout_marginTop="16dp"
+    	android:text="@string/textview"
+    	android:textSize="16sp"/>
+
+    <ImageButton
+        android:id="@+id/butsetdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView"
+        android:layout_marginRight="16dp"
+        android:contentDescription="@string/imagebutton"
+        android:src="@android:drawable/ic_dialog_info" />
+
+    <TextView
+        android:id="@+id/textViewHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewDay"
+        android:layout_below="@+id/textViewDay"
+        android:layout_marginTop="10dp"
+        android:text="@string/tvHour"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textViewrezhour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewHour"
+        android:layout_alignBottom="@+id/textViewHour"
+        android:layout_alignRight="@+id/textViewrezday"
+        android:text="@string/tvRezHour"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textViewMinute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewHour"
+        android:layout_below="@+id/textViewHour"
+        android:layout_marginTop="10dp"
+        android:text="@string/tvMinute"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textViewrezminute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewMinute"
+        android:layout_alignBottom="@+id/textViewMinute"
+        android:layout_alignRight="@+id/textViewrezhour"
+        android:text="@string/tvRezMinute"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textViewrezday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/butsetdate"
+        android:layout_marginRight="82dp"
+        android:layout_toLeftOf="@+id/butsetdate"
+        android:text="@string/tvRezDay"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textViewDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewrezday"
+        android:layout_alignBottom="@+id/textViewrezday"
+        android:layout_alignLeft="@+id/textView"
+        android:text="@string/tvDay"
+        android:textSize="40sp" />
+
+</RelativeLayout>
