@@ -17,10 +17,14 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
     
-    <style name="TextView" parent="android:Theme.Light">
+    <style name="DayOfMonth" parent="android:Theme.Light">
         <item name="android:textColor">#293e6b</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="WeekDayText" parent="android:Theme.Light">
         <item name="android:textSize">20sp</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#584480</item>
     </style>
 
 </resources>

@@ -1,12 +1,15 @@
 package ru.vasilenkoaleksandr.time2date;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 //import java.util.Date;
 
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.app.Activity;
 import android.content.Intent;
@@ -14,17 +17,15 @@ import android.content.Intent;
 public class Time2dateActivity extends Activity {
 	
 	TextView textView, textViewDay, textViewHour, textViewMinute, textViewrezDay, textViewrezHour, textViewrezMinute;
-	ImageButton butsetdate;
+	ImageView butsetdate;
 	static final private int CALENDAR_SELECTED = 0;
-	
-	Calendar today = Calendar.getInstance();
-	final long todaymilisec = today.getTimeInMillis();
-	
-	int tdday = today.get(Calendar.DAY_OF_MONTH);
-	int tdmounth = today.get(Calendar.MONTH)+1;
-	int tdYear = today.get(Calendar.YEAR);
-	
-	String tvText = " " + tdday + "." +tdmounth+"."+tdYear;
+
+	Date date = new Date();
+	SimpleDateFormat currentDate = new SimpleDateFormat("dd.MM.yyyy");
+	String tvText = currentDate.format(date);
+
+	//записываем значение текущей даты
+	final long todaymilisec = date.getTime();
 	String rezDay, rezHour, rezMinute;
 
 	@Override
@@ -40,14 +41,14 @@ public class Time2dateActivity extends Activity {
 		textViewrezHour  = (TextView)findViewById(R.id.textViewrezhour);
 		textViewrezMinute = (TextView)findViewById(R.id.textViewrezminute);
 		
-		butsetdate = (ImageButton)findViewById(R.id.butsetdate);
+		butsetdate = (ImageView)findViewById(R.id.butsetdate);
 		
 		textView.setText(tvText);
 
 		
 		
 		butsetdate.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 
@@ -80,13 +81,11 @@ public class Time2dateActivity extends Activity {
 					textViewrezHour.setText(rezHour);
 					textViewrezMinute.setText(rezMinute);
 					
-					Calendar rezDate = Calendar.getInstance();
-					rezDate.setTimeInMillis(selectedmilisec);
-					tdday = rezDate.get(Calendar.DAY_OF_MONTH);
-					tdmounth = rezDate.get(Calendar.MONTH)+1;
-					tdYear = rezDate.get(Calendar.YEAR);
+
+					date.setTime(selectedmilisec);
+
 					
-					tvText = " " + tdday + "." +tdmounth+"."+tdYear;
+					tvText = "до "+currentDate.format(date);
 					textView.setText(tvText);
 					
 				}

@@ -2,33 +2,35 @@
     android:id="@+id/main_fragment_linearlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#54a8c7"
+    android:background="@drawable/fon"
     android:paddingLeft="16dp"
     android:paddingRight="16dp" >
     
     <TextView
         android:id="@+id/textView"
-        style="@style/TextView"
+        style="@style/DayOfMonth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:text="@string/textview"
-        android:textSize="16sp" />
+        android:textSize="25sp" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/butsetdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:minWidth="60dp"
+        android:minHeight="60dp"
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/textView"
         android:layout_marginRight="16dp"
         android:contentDescription="@string/imagebutton"
-        android:src="@android:drawable/ic_dialog_info" />
+        android:src="@android:drawable/ic_input_add" />
 
     <TextView
         android:id="@+id/textViewHour"
-        style="@style/TextView"
+        style="@style/DayOfMonth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textViewDay"
@@ -39,7 +41,7 @@
 
     <TextView
         android:id="@+id/textViewrezhour"
-        style="@style/TextView"
+        style="@style/DayOfMonth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textViewHour"
@@ -50,7 +52,7 @@
 
     <TextView
         android:id="@+id/textViewMinute"
-        style="@style/TextView"
+        style="@style/DayOfMonth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textViewHour"
@@ -61,7 +63,7 @@
 
     <TextView
         android:id="@+id/textViewrezminute"
-        style="@style/TextView"
+        style="@style/DayOfMonth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textViewMinute"
@@ -72,7 +74,7 @@
 
     <TextView
         android:id="@+id/textViewrezday"
-        style="@style/TextView"
+        style="@style/DayOfMonth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textViewDay"
@@ -83,7 +85,7 @@
 
     <TextView
         android:id="@+id/textViewDay"
-        style="@style/TextView"
+        style="@style/DayOfMonth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView"
