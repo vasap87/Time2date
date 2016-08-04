@@ -2,7 +2,7 @@
     android:id="@+id/main_fragment_linearlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fon"
+    android:background="#33b5e5"
     android:paddingLeft="16dp"
     android:paddingRight="16dp" >
     
@@ -26,7 +26,7 @@
         android:layout_alignTop="@+id/textView"
         android:layout_marginRight="16dp"
         android:contentDescription="@string/imagebutton"
-        android:src="@android:drawable/ic_input_add" />
+        android:src="@drawable/calendar" />
 
     <TextView
         android:id="@+id/textViewHour"

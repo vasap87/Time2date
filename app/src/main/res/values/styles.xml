@@ -18,13 +18,13 @@
     </style>
     
     <style name="DayOfMonth" parent="android:Theme.Light">
-        <item name="android:textColor">#293e6b</item>
+        <item name="android:textColor">#131926</item>
         <item name="android:textSize">25sp</item>
     </style>
 
     <style name="WeekDayText" parent="android:Theme.Light">
         <item name="android:textSize">20sp</item>
-        <item name="android:textColor">#584480</item>
+        <item name="android:textColor">#131926</item>
     </style>
 
 </resources>

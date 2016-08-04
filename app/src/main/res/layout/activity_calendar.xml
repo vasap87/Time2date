@@ -8,16 +8,15 @@
         android:id="@+id/calendarView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/fon"
+        android:background="#33b5e5"
         android:dateTextAppearance="@style/DayOfMonth"
         android:fadingEdge="horizontal"
         android:weekDayTextAppearance="@style/WeekDayText"
         android:firstDayOfWeek="2"
-        android:focusedMonthDateColor="#30050d"
+        android:focusedMonthDateColor="#131926"
         android:unfocusedMonthDateColor="#b1bfa3"
         android:scrollbarStyle="insideInset"
-        android:selectedWeekBackgroundColor="#10265e"
         android:showWeekNumber="false"
-        android:weekSeparatorLineColor="#99b8c7" />
+        android:weekSeparatorLineColor="#b1bfa3" />
 
 </LinearLayout>
